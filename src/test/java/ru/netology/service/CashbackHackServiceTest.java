@@ -29,8 +29,8 @@ public class CashbackHackServiceTest {
 
     @org.testng.annotations.Test
     public void testRemain3() {
-        int boundary = 1999;
-        int expected = 1;
+        int boundary = 1000;
+        int expected = 0;
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(boundary);
         assertEquals(actual, expected);
